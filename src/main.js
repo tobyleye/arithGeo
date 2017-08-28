@@ -1,7 +1,7 @@
 // a simple funtion that checks if an array is arithmetic, geometric, neither and empty
 
 const isArithmetic = (array) => {
-	if (array.length > 1) {
+	if (array.length > 2) {
 		const diff = array[1] - array[0];
 		for(let i=0; i < array.length-1; i++) {
 			if (diff !== array[i+1] - array[i])
@@ -14,7 +14,7 @@ const isArithmetic = (array) => {
 
 
 const isGeometric = (array) => {
-	if (array.length > 1) {
+	if (array.length > 2) {
 		const ratio = array[1] / array[0];
 		for(let i=0; i < array.length-1; i++) {
 			if (ratio !== array[i+1] / array[i])
