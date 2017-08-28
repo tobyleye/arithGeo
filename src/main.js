@@ -13,7 +13,6 @@ const isArithmetic = (array) => {
 }
 
 
-
 const isGeometric = (array) => {
 	if (array.length > 1) {
 		const ratio = array[1] / array[0];
@@ -27,25 +26,18 @@ const isGeometric = (array) => {
 }
 
 
-
 const isArrayEmpty = (array) => Array.isArray(array) && array.length == 0 ;
 
 
-module.exports = {
-	aritGeo: (array) => {
+export default function aritGeo(array) {
+	if ( isArithmetic(array) )
+		return "Arithmetic"
 
-		if ( isArithmetic(array) )
-			return "Arithmetic"
+	if ( isGeometric(array) )
+		return "Geometric"
 
-		if ( isGeometric(array) )
-			return "Geometric"
+	if ( isArrayEmpty(array) )
+		return 0;
 
-		if ( isArrayEmpty(array) )
-			return 0;
-
-		return -1;
-	}
+	return -1;
 }
-
-
-
