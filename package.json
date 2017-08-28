@@ -1,0 +1,22 @@
+{
+  "name": "aritgeo",
+  "version": "1.0.0",
+  "description": "a simple funtion that checks if an array is arithmetic, geometric, neither and empty",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "keywords": [
+    "TDD",
+    "Javascript"
+  ],
+  "author": "toby",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
